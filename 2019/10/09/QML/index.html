@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | Ykgege</title>
+  <title>Ykgege</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="训练内容介绍： 声明式UI和QML, QtCreator和QML Designer，设计过程QML必需品：基本语法、属性、标准QML元素、属性绑定、附加属性、布局和锚、交互、触摸和手势自定义项目：自定义项目，QML模块，模块版本，网络透明度Qt Quick Controls：布局，控件，样式，Qt企业控件动画：动画类型，缓动曲线，状态机，过渡数据模型与视图：可闪烁，模型类，ListView, Gr">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Ykgege">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/10/09/QML/index.html">
 <meta property="og:site_name" content="Ykgege">
+<meta property="og:description" content="训练内容介绍： 声明式UI和QML, QtCreator和QML Designer，设计过程QML必需品：基本语法、属性、标准QML元素、属性绑定、附加属性、布局和锚、交互、触摸和手势自定义项目：自定义项目，QML模块，模块版本，网络透明度Qt Quick Controls：布局，控件，样式，Qt企业控件动画：动画类型，缓动曲线，状态机，过渡数据模型与视图：可闪烁，模型类，ListView, Gr">
 <meta property="og:locale" content="zh">
+<meta property="og:updated_time" content="2019-09-05T02:24:07.744Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ykgege">
+<meta name="twitter:description" content="训练内容介绍： 声明式UI和QML, QtCreator和QML Designer，设计过程QML必需品：基本语法、属性、标准QML元素、属性绑定、附加属性、布局和锚、交互、触摸和手势自定义项目：自定义项目，QML模块，模块版本，网络透明度Qt Quick Controls：布局，控件，样式，Qt企业控件动画：动画类型，缓动曲线，状态机，过渡数据模型与视图：可闪烁，模型类，ListView, Gr">
   
     <link rel="alternative" href="/atom.xml" title="Ykgege" type="application/atom+xml">
   
@@ -150,70 +154,210 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-QML" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="训练内容"><a href="#训练内容" class="headerlink" title="训练内容"></a>训练内容</h4><p>介绍： 声明式UI和QML, QtCreator和QML Designer，设计过程<br>QML必需品：基本语法、属性、标准QML元素、属性绑定、附加属性、布局和锚、交互、触摸和手势<br>自定义项目：自定义项目，QML模块，模块版本，网络透明度<br>Qt Quick Controls：布局，控件，样式，Qt企业控件<br>动画：动画类型，缓动曲线，状态机，过渡<br>数据模型与视图：可闪烁，模型类，ListView, GridView, PathView<br>画布：QtQuick画布，画布画，渲染选项<br>本地化：qsTr/qsTrId函数，翻译，动态语言变化，Qt语言学家<br>动态QML：加载器，Qt组件，延迟加载，孵化<br>粒子系统：发射器，影响因素，性能问题<br>图形化影响：现成的图形效果，基于着色器的效果，顶点和片段着色器<br>QML和脚本：QML全局对象，QML范围，QML脚本限制，本地存储，启动脚本<br>使用QML在Qt/ c++应用程序中：主要类，结构化数据，动态结构化数据，网络组件<br>QML显示：场景图，节点，节点类型，渲染优化<br>对象，并使用c++扩展QML：添加新类型、对象和列表属性类型、继承、默认属性和分组属性</p>
+<h4 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h4><p>用户界面是通过声明元素及其属性来实现的<br>可以使用现成的或定制的元素<br>自定义元素(自定义项或组件或QML文档)可以使用QML designer，GIMP或PhotoShop创建<br>元素之间可能有两种依赖关系<br>属性绑定和信号通知程序<br>元素可能有内部状态机和/或动画，效果(阴影，模糊，混合)<br>元素(或实际上的元素类型)可以用c++创建<br>例如，在处理大量数据的元素中可能是必要的</p>
+<h4 id="QML用户界面"><a href="#QML用户界面" class="headerlink" title="QML用户界面"></a>QML用户界面</h4><p>QML元素及其属性的树</p>
+<h4 id="QML元素"><a href="#QML元素" class="headerlink" title="QML元素"></a>QML元素</h4><p>元素是标记语言中的结构<br>表示视觉和非视觉部分<br>Item是可视化元素的基本类型(c++中的QQuickItem)<br>非可视元素(QObject基类):<br>状态、过渡、<br>元素包含属性<br>以及可选的方法和信号</p>
+<h4 id="QML元素-不完整的列表"><a href="#QML元素-不完整的列表" class="headerlink" title="QML元素-不完整的列表"></a>QML元素-不完整的列表</h4><p>Basic（基本）</p>
+<p>Item Component（组件）QtObject</p>
+<p>Graphics（图形）<br>-Rectangle Image Gradient（梯度渐变） Canvas（画布，继承Item）</p>
+<p>Text Handling（文本处理）<br>-Text, TextInput, TextEdit, IntValidator, RegExpValidator, FontLoader</p>
+<p>Interestions（相互作用）<br>-MouseArea, Keys, PinchArea, Flickable, Flipable, FocusScope</p>
+<p>Positioners and Repeater（定位器和转发器）<br>-Column, Row, Grid, Flow, Repeater</p>
+<p>Transformations（转换）<br>-Scale（规模）, Translate（翻译）, Rotation（旋转） </p>
+<p>State<br>-State  PropertyChanges（属性变化）StateChangeScript, ParentChange, AnchorChanges</p>
+<p>Animations and Transitions（动画和过渡）<br>-Transition, Behavior, ScriptAction, AnimatedImage, SpringAnimation, SmoothAnimation</p>
+<p>Model View<br>-ListModel, ListElement, Binding, PathView, Package</p>
+<p>Utility （实用）<br>Connections, Binding, Timer, Qt, Loader （连接，绑定，定时器，Qt，加载器）</p>
+<h4 id="Import-Statement"><a href="#Import-Statement" class="headerlink" title="Import Statement"></a>Import Statement</h4><p>（导入声明）</p>
+<p>使你能访问QML元素</p>
+<p>指定正在使用Qt Quick的哪个版本</p>
+<p>保证向后兼容 只加载指定版本的特性</p>
+<h4 id="QML元素和属性"><a href="#QML元素和属性" class="headerlink" title="QML元素和属性"></a>QML元素和属性</h4><p>QML元素由类型安全属性描述</p>
+<p>用于 标识元素（id属性） 定制它们的外观 改变他们的行为</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">Text &#123;    </span><br><span class="line">    x: <span class="number">10.5</span>   <span class="comment">// A real property     </span></span><br><span class="line">    text: <span class="string">"Lorem Ipsum"</span>  <span class="comment">// A string property     </span></span><br><span class="line">    focus: <span class="literal">true</span>  <span class="comment">// A bool property     </span></span><br><span class="line">    states: [     <span class="comment">// A list property (notice the [ ... , ... ] structure)       	   </span></span><br><span class="line">        State &#123; <span class="attr">name</span>: <span class="string">"State_1"</span> &#125;,        </span><br><span class="line">        State &#123; <span class="attr">name</span>: <span class="string">"State_2"</span> &#125;    </span><br><span class="line">    ]     </span><br><span class="line">    font.pixelSize: <span class="number">14</span>  <span class="comment">// A grouped property    </span></span><br><span class="line">    font.bold: <span class="literal">true</span>  <span class="comment">// Alternative syntax: font &#123; pixelSize: 14; bold: true &#125; </span></span><br><span class="line"> </span><br><span class="line">   width: <span class="string">"hello"</span>  <span class="comment">// Illegal, real number expected!  </span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>属性的值可以是JavaScript表达式的结果或者JavaScript方法调用的返回值。</p>
+<p>属性可以绑定到其他属性，属性值在另一个更改时自动更新。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Rectangle &#123;     </span><br><span class="line">    id: firstRectangle     </span><br><span class="line">    color: <span class="string">"blue"</span>     </span><br><span class="line">    width: <span class="built_in">Math</span>.min(<span class="number">30</span>, parent.width)     </span><br><span class="line">    height: <span class="number">2</span> * width  </span><br><span class="line">&#125; </span><br><span class="line">Rectangle &#123;     </span><br><span class="line">    id: secondRectangle     </span><br><span class="line">    color: firstRectangle.width === <span class="number">30</span> ? <span class="string">"red"</span> : <span class="string">"green"</span>     </span><br><span class="line">    width: firstRectangle.width     </span><br><span class="line">    height: firstRectangle.height / <span class="number">2</span> + <span class="number">20</span>  </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//Note! Using property bindings is highly recommended – this is the truly declarative way!</span></span><br><span class="line"><span class="comment">//注意!强烈推荐使用属性绑定——这是真正的声明性方法!</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="附加属性和自定义属性"><a href="#附加属性和自定义属性" class="headerlink" title="附加属性和自定义属性"></a>附加属性和自定义属性</h4><p>附加属性应用于元素:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">TextInput &#123;      </span><br><span class="line">    text: <span class="string">"Hello world"</span>      </span><br><span class="line">    KeyNavigation.tab: nextInput  </span><br><span class="line">&#125; </span><br><span class="line"><span class="comment">//KeyNavigation.tab不是TextInput的标准属性 是附加到元素的标准属性</span></span><br></pre></td></tr></table></figure>
+
+<p>自定义属性可以添加到任何元素:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Rectangle &#123;     </span><br><span class="line">    property real mass: <span class="number">100.0</span>  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Attached Objects（附着物）</p>
+<p>与实例化一起使用 用作自定义属性或属性绑定</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> QtQuick <span class="number">2.0</span>  </span><br><span class="line"><span class="keyword">import</span> QtQuick.Window <span class="number">2.1</span>  </span><br><span class="line"> </span><br><span class="line">Rectangle &#123;      </span><br><span class="line">    width: <span class="number">400</span>; </span><br><span class="line">    height: <span class="number">400</span>      </span><br><span class="line">    color: <span class="string">"lightblue"</span>      </span><br><span class="line">    property int screenOrientation: Screen.primaryOrientation     </span><br><span class="line">    Text &#123;         </span><br><span class="line">        id: textEl </span><br><span class="line">        x: <span class="number">100</span>; y: <span class="number">100</span>         </span><br><span class="line">        text: <span class="string">"Qt Quick"</span>          </span><br><span class="line">        font.family: <span class="string">"Helvetica“; font.pixelSize: 32      </span></span><br><span class="line"><span class="string">    &#125;      </span></span><br><span class="line"><span class="string">        onScreenOrientationChanged: &#123;          </span></span><br><span class="line"><span class="string">            textEl.text = "</span>Orientation is <span class="string">" Screen.primaryOrientation      </span></span><br><span class="line"><span class="string">             &#125;  </span></span><br><span class="line"><span class="string">    &#125;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Gradients"><a href="#Gradients" class="headerlink" title="Gradients"></a>Gradients</h4><p>使用渐变属性定义渐变:</p>
+<p>​    使用渐变元素作为值，</p>
+<p>​    包含GradientStop元素，每个元素带有：</p>
+<p>​        位置:0(起点)到1(终点)之间的数字</p>
+<p>​        一个颜色</p>
+<p>​    起点和终点</p>
+<p>​        在物品的顶部和底部边缘</p>
+<p>​        无法重新定位</p>
+<p>​    渐变覆盖颜色定义</p>
+<p>​    渐变的替代品:一个简单的背景图像</p>
+<p>注意将元素定义为属性值</p>
+<p>使用图像而不是实际的渐变通常更快</p>
+<p>艺术家可以创建所需的渐变</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> QtQuick <span class="number">2.1</span></span><br><span class="line">Rectangle &#123;</span><br><span class="line">    width: <span class="number">400</span>; height: <span class="number">400</span></span><br><span class="line">    gradient: Gradient &#123;</span><br><span class="line">        GradientStop &#123;</span><br><span class="line">            position: <span class="number">0.0</span>; color: <span class="string">"green"</span></span><br><span class="line">        &#125;</span><br><span class="line">        GradientStop &#123;</span><br><span class="line">            position: <span class="number">1.0</span>; color: <span class="string">"blue"</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Qt-Quick概览"><a href="#Qt-Quick概览" class="headerlink" title="Qt Quick概览"></a>Qt Quick概览</h3><h4 id="什么是Qt-Quick"><a href="#什么是Qt-Quick" class="headerlink" title="什么是Qt Quick"></a>什么是Qt Quick</h4><p>​    Qt  Quick 是Qt提供一种高级用户界面工具包，它包括描述性语言QML，语言运行时，大量的用户界面元素，Qt Creator对QML的完美支持，Qt Quick设计器，QML与C++混合编程支持等众多技术，使用它你可以轻松，快速地为移动和嵌入式设备创建流畅的用户界面。</p>
+<p>​    QML实现并扩展了ECMAScript，是一种说明性语言，用来描述基于Qt对象系统的用户界面。QML提供了高可读性的，声明式的，类CSS的语法，支持结合动态属性绑定的ECMAScript表达式</p>
+<p>​    Qt Quick模块是开发QML应用的标准库，提供了使用QML创建用户界面所需的一切东西，包括可视化类型，交互类型，动画，模型与视图，粒子特效与着色器等</p>
+<h5 id="类型属性"><a href="#类型属性" class="headerlink" title="类型属性"></a>类型属性</h5><p>1.基本类型</p>
+<p>2.id属性</p>
+<p>唯一，在其他对象或脚本中通过id来引用该对象了</p>
+<p>3.列表属性 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">Item&#123;</span><br><span class="line">	children:[</span><br><span class="line">		Image&#123;&#125;,</span><br><span class="line">		Text&#123;&#125;</span><br><span class="line">	]</span><br><span class="line">&#125;</span><br><span class="line">列表是包含在方括号内，以逗号分割的多个元素的集合</span><br><span class="line">列表内只能包含QML对象，不能包含任何基本类型的字面量(如果非要包含，需要使用var变量)</span><br><span class="line">Item&#123;</span><br><span class="line">	children[</span><br><span class="line">		Text&#123;</span><br><span class="line">			text:&quot;textOne&quot;;</span><br><span class="line">		&#125;,</span><br><span class="line">		Text&#123;</span><br><span class="line">			text:&quot;textTwo&quot;;</span><br><span class="line">		&#125;		</span><br><span class="line">	]</span><br><span class="line">	Component.onCompleted:&#123;</span><br><span class="line">		for(var i =0;i&lt;children.length;i++)&#123;</span><br><span class="line">			console.log(&quot;text of label&quot;,i,&quot;: &quot;,chilren[i].text)</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>4.信号处理器</p>
+<p>一般以on<signal></signal></p>
+<p>Component.onCompleted:{} 是附加信号处理器</p>
+<p>5.分组属性</p>
+<p>在某些情况下使用一个“.”符号或分组符号将相关的属性形成一个逻辑组</p>
+<p>6.附加属性</p>
+<p>附加属性(attached properties)</p>
+<figure class="highlight qml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> QtQuick <span class="number">2.2</span></span><br><span class="line"></span><br><span class="line"><span class="title">Item</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>:<span class="number">100</span>;</span><br><span class="line">	<span class="attribute">height</span>:<span class="number">100</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="attribute">focus</span>:<span class="attribute">true;  //focus焦点</span></span><br><span class="line"><span class="attribute">	Keys.enable</span>: <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/09/QML/" class="archive-article-date">
-  	<time datetime="2019-10-09T04:51:09.723Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/09/QML/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/09/hello-world/" class="archive-article-date">
-  	<time datetime="2019-10-09T02:21:05.666Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/10/09/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/09/hello-world/">Hello World</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -236,8 +380,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
