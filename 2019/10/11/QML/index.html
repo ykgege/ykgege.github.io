@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://ykgege.github.io">
-  <title>Ykgege</title>
+  <title>学习QML | Ykgege</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="训练内容介绍： 声明式UI和QML, QtCreator和QML Designer，设计过程QML必需品：基本语法、属性、标准QML元素、属性绑定、附加属性、布局和锚、交互、触摸和手势自定义项目：自定义项目，QML模块，模块版本，网络透明度Qt Quick Controls：布局，控件，样式，Qt企业控件动画：动画类型，缓动曲线，状态机，过渡数据模型与视图：可闪烁，模型类，ListView, Gr">
+<meta name="keywords" content="qml">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Ykgege">
-<meta property="og:url" content="https://ykgege.github.io/2019/10/09/QML/index.html">
+<meta property="og:title" content="学习QML">
+<meta property="og:url" content="https://ykgege.github.io/2019/10/11/QML/index.html">
 <meta property="og:site_name" content="Ykgege">
 <meta property="og:description" content="训练内容介绍： 声明式UI和QML, QtCreator和QML Designer，设计过程QML必需品：基本语法、属性、标准QML元素、属性绑定、附加属性、布局和锚、交互、触摸和手势自定义项目：自定义项目，QML模块，模块版本，网络透明度Qt Quick Controls：布局，控件，样式，Qt企业控件动画：动画类型，缓动曲线，状态机，过渡数据模型与视图：可闪烁，模型类，ListView, Gr">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2019-09-05T02:24:07.744Z">
+<meta property="og:updated_time" content="2019-10-11T09:55:02.500Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ykgege">
+<meta name="twitter:title" content="学习QML">
 <meta name="twitter:description" content="训练内容介绍： 声明式UI和QML, QtCreator和QML Designer，设计过程QML必需品：基本语法、属性、标准QML元素、属性绑定、附加属性、布局和锚、交互、触摸和手势自定义项目：自定义项目，QML模块，模块版本，网络透明度Qt Quick Controls：布局，控件，样式，Qt企业控件动画：动画类型，缓动曲线，状态机，过渡数据模型与视图：可闪烁，模型类，ListView, Gr">
   
     <link rel="alternative" href="/atom.xml" title="Ykgege" type="application/atom+xml">
@@ -157,9 +158,26 @@
             <article id="post-QML" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      学习QML
+    </h1>
+  
+
+        
+        <a href="/2019/10/11/QML/" class="archive-article-date">
+  	<time datetime="2019-10-11T02:34:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-11</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <h4 id="训练内容"><a href="#训练内容" class="headerlink" title="训练内容"></a>训练内容</h4><p>介绍： 声明式UI和QML, QtCreator和QML Designer，设计过程<br>QML必需品：基本语法、属性、标准QML元素、属性绑定、附加属性、布局和锚、交互、触摸和手势<br>自定义项目：自定义项目，QML模块，模块版本，网络透明度<br>Qt Quick Controls：布局，控件，样式，Qt企业控件<br>动画：动画类型，缓动曲线，状态机，过渡<br>数据模型与视图：可闪烁，模型类，ListView, GridView, PathView<br>画布：QtQuick画布，画布画，渲染选项<br>本地化：qsTr/qsTrId函数，翻译，动态语言变化，Qt语言学家<br>动态QML：加载器，Qt组件，延迟加载，孵化<br>粒子系统：发射器，影响因素，性能问题<br>图形化影响：现成的图形效果，基于着色器的效果，顶点和片段着色器<br>QML和脚本：QML全局对象，QML范围，QML脚本限制，本地存储，启动脚本<br>使用QML在Qt/ c++应用程序中：主要类，结构化数据，动态结构化数据，网络组件<br>QML显示：场景图，节点，节点类型，渲染优化<br>对象，并使用c++扩展QML：添加新类型、对象和列表属性类型、继承、默认属性和分组属性</p>
+<a id="more"></a>
+
 <h4 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h4><p>用户界面是通过声明元素及其属性来实现的<br>可以使用现成的或定制的元素<br>自定义元素(自定义项或组件或QML文档)可以使用QML designer，GIMP或PhotoShop创建<br>元素之间可能有两种依赖关系<br>属性绑定和信号通知程序<br>元素可能有内部状态机和/或动画，效果(阴影，模糊，混合)<br>元素(或实际上的元素类型)可以用c++创建<br>例如，在处理大量数据的元素中可能是必要的</p>
 <h4 id="QML用户界面"><a href="#QML用户界面" class="headerlink" title="QML用户界面"></a>QML用户界面</h4><p>QML元素及其属性的树</p>
 <h4 id="QML元素"><a href="#QML元素" class="headerlink" title="QML元素"></a>QML元素</h4><p>元素是标记语言中的结构<br>表示视觉和非视觉部分<br>Item是可视化元素的基本类型(c++中的QQuickItem)<br>非可视元素(QObject基类):<br>状态、过渡、<br>元素包含属性<br>以及可选的方法和信号</p>
@@ -258,6 +276,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">qml</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -308,7 +337,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://ykgege.github.io/2019/10/09/QML/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://ykgege.github.io/2019/10/11/QML/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -448,6 +477,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">qml</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">css</a>
