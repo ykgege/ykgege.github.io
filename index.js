@@ -22,7 +22,7 @@ var ww = document.documentElement.clientWidth;
 function createFlake(){
     //创建一个img元素。
     var f = document.createElement("img");
-    f.src = "flake.png";
+    f.src = "./flake.png";
     //把新创建的img元素插入到body中。
     document.body.appendChild(f);
     //设置雪花图片的宽高
