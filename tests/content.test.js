@@ -25,3 +25,11 @@ test("页面包含照片故事所需的语义区域", () => {
   assert.match(html, /id="gallery"/)
   assert.match(html, /id="closing"/)
 })
+
+test("照片渲染脚本包含加载失败提示与日志", () => {
+  const script = fs.readFileSync("gallery.js", "utf8")
+
+  assert.match(script, /console\.warn/)
+  assert.match(script, /图片加载失败/)
+  assert.match(script, /document\.createElement\("figure"\)/)
+})
