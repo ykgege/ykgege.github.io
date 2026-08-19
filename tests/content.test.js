@@ -17,13 +17,15 @@ test("婚礼内容具备可渲染的必要字段", () => {
   })
 })
 
-test("页面包含照片故事所需的语义区域", () => {
+test("页面提供幻灯片和婚礼信息容器", () => {
   const html = fs.readFileSync("index.html", "utf8")
 
-  assert.match(html, /<main/)
-  assert.match(html, /id="story"/)
-  assert.match(html, /id="gallery"/)
-  assert.match(html, /id="closing"/)
+  assert.match(html, /id="slideshow"/)
+  assert.match(html, /id="slide-image"/)
+  assert.match(html, /id="slide-caption"/)
+  assert.match(html, /id="slide-counter"/)
+  assert.match(html, /data-action="previous"/)
+  assert.match(html, /data-action="next"/)
 })
 
 test("照片渲染脚本包含加载失败提示与日志", () => {
