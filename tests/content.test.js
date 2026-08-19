@@ -45,12 +45,13 @@ test("幻灯片脚本包含自动播放和触摸切换", () => {
   assert.match(script, /showSlide/)
 })
 
-test("照片按原始比例完整展示", () => {
+test("幻灯片保留完整照片并提供浪漫视觉层", () => {
   const styles = fs.readFileSync("styles.css", "utf8")
 
-  assert.match(styles, /\.hero__image\s*\{[^}]*height:\s*auto/)
-  assert.match(styles, /\.gallery__item img\s*\{[^}]*height:\s*auto/)
+  assert.match(styles, /#slide-image\s*\{[^}]*height:\s*auto/)
+  assert.match(styles, /\.slide__romance/)
+  assert.match(styles, /#6f2735/)
+  assert.match(styles, /rgba\(36, 25, 27, 0\.18\)/)
+  assert.match(styles, /overflow:\s*hidden/)
   assert.doesNotMatch(styles, /object-fit:/)
-  assert.doesNotMatch(styles, /overflow:\s*hidden/)
-  assert.doesNotMatch(styles, /aspect-ratio:\s*(?:16\s*\/\s*10|4\s*\/\s*5)/)
 })
