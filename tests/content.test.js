@@ -36,6 +36,15 @@ test("照片渲染脚本包含加载失败提示与日志", () => {
   assert.match(script, /document\.createElement\("figure"\)/)
 })
 
+test("幻灯片脚本包含自动播放和触摸切换", () => {
+  const script = fs.readFileSync("slideshow.js", "utf8")
+
+  assert.match(script, /setInterval/)
+  assert.match(script, /touchstart/)
+  assert.match(script, /touchend/)
+  assert.match(script, /showSlide/)
+})
+
 test("照片按原始比例完整展示", () => {
   const styles = fs.readFileSync("styles.css", "utf8")
 
