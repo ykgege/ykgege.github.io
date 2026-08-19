@@ -26,16 +26,16 @@ img {
 
 .hero {
   position: relative;
-  overflow: hidden;
   background: #183d35;
 }
 
 .hero__image {
-  height: min(92svh, 133.39vw);
-  object-fit: contain;
-  object-position: center;
+  height: auto;
+  margin: 0 auto;
+  max-height: 92svh;
+  max-width: 100%;
   position: relative;
-  width: 100%;
+  width: auto;
 }
 
 .hero__shade {

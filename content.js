@@ -9,8 +9,8 @@
 })(globalThis, function createWeddingStory() {
   // 仅需修改此处，即可替换页面的姓名、日期和照片文案。
   return {
-    coupleNames: "Y & K",
-    date: "2026.10.01",
+    coupleNames: "yk 和 zs",
+    date: "2027/2/14",
     location: "Shanghai",
     closingLine: "愿我们的每一次回望，都有彼此。",
     photos: [

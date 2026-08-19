@@ -4,8 +4,8 @@ const fs = require("node:fs")
 const story = require("../content.js")
 
 test("婚礼内容具备可渲染的必要字段", () => {
-  assert.ok(story.coupleNames.trim())
-  assert.match(story.date, /^\d{4}\.\d{2}\.\d{2}$/)
+  assert.equal(story.coupleNames, "yk 和 zs")
+  assert.equal(story.date, "2027/2/14")
   assert.ok(Array.isArray(story.photos))
   assert.ok(story.photos.length >= 3 && story.photos.length <= 6)
 
@@ -37,8 +37,9 @@ test("照片渲染脚本包含加载失败提示与日志", () => {
 test("照片按原始比例完整展示", () => {
   const styles = fs.readFileSync("styles.css", "utf8")
 
-  assert.match(styles, /\.hero__image\s*\{[^}]*object-fit:\s*contain/)
+  assert.match(styles, /\.hero__image\s*\{[^}]*height:\s*auto/)
   assert.match(styles, /\.gallery__item img\s*\{[^}]*height:\s*auto/)
-  assert.doesNotMatch(styles, /object-fit:\s*cover/)
+  assert.doesNotMatch(styles, /object-fit:/)
+  assert.doesNotMatch(styles, /overflow:\s*hidden/)
   assert.doesNotMatch(styles, /aspect-ratio:\s*(?:16\s*\/\s*10|4\s*\/\s*5)/)
 })
