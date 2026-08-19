@@ -26,26 +26,24 @@ img {
 
 .hero {
   position: relative;
-  min-height: 92svh;
   overflow: hidden;
   background: #183d35;
 }
 
-.hero__image,
+.hero__image {
+  height: min(92svh, 133.39vw);
+  object-fit: contain;
+  object-position: center;
+  position: relative;
+  width: 100%;
+}
+
 .hero__shade {
   height: 100%;
   inset: 0;
   position: absolute;
-  width: 100%;
-}
-
-.hero__image {
-  object-fit: cover;
-  object-position: center 25%;
-}
-
-.hero__shade {
   background: rgba(12, 28, 24, 0.42);
+  width: 100%;
 }
 
 .hero__content {
@@ -128,8 +126,7 @@ h2 {
 }
 
 .gallery__item img {
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
+  height: auto;
   width: 100%;
 }
 
@@ -138,8 +135,7 @@ h2 {
 }
 
 .gallery__item--wide img {
-  aspect-ratio: 16 / 10;
-  object-position: center 25%;
+  height: auto;
 }
 
 .gallery__item figcaption {
@@ -168,10 +164,6 @@ h2 {
 }
 
 @media (max-width: 700px) {
-  .hero {
-    min-height: 88svh;
-  }
-
   .hero__content {
     padding: 24px;
   }
@@ -191,10 +183,6 @@ h2 {
     margin: 0 0 56px;
   }
 
-  .gallery__item--wide img,
-  .gallery__item img {
-    aspect-ratio: 4 / 5;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

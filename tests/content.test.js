@@ -33,3 +33,12 @@ test("照片渲染脚本包含加载失败提示与日志", () => {
   assert.match(script, /图片加载失败/)
   assert.match(script, /document\.createElement\("figure"\)/)
 })
+
+test("照片按原始比例完整展示", () => {
+  const styles = fs.readFileSync("styles.css", "utf8")
+
+  assert.match(styles, /\.hero__image\s*\{[^}]*object-fit:\s*contain/)
+  assert.match(styles, /\.gallery__item img\s*\{[^}]*height:\s*auto/)
+  assert.doesNotMatch(styles, /object-fit:\s*cover/)
+  assert.doesNotMatch(styles, /aspect-ratio:\s*(?:16\s*\/\s*10|4\s*\/\s*5)/)
+})
