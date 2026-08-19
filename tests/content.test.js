@@ -16,3 +16,12 @@ test("婚礼内容具备可渲染的必要字段", () => {
     assert.ok(caption.trim())
   })
 })
+
+test("页面包含照片故事所需的语义区域", () => {
+  const html = fs.readFileSync("index.html", "utf8")
+
+  assert.match(html, /<main/)
+  assert.match(html, /id="story"/)
+  assert.match(html, /id="gallery"/)
+  assert.match(html, /id="closing"/)
+})
